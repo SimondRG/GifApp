@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Gifs, SearchResponse } from '../interfaces/gifs.interfaces';
+import { Gif, SearchResponse } from '../interfaces/gifs.interfaces';
 
 @Injectable({providedIn: 'root'})
 export class GifsServices {
 
-    public gifList: Gifs[] = [];
+    public gifList: Gif[] = [];
 
     private _tagsHistory: string[] = [];
     private apiKey      : string = 'vC0wAtAOerrLQLC4MVnOzP5NobxM2SGw';

@@ -1,10 +1,10 @@
 export interface SearchResponse {
-    data:       Gifs[];
+    data:       Gif[];
     meta:       Meta;
     pagination: Pagination;
 }
 
-export interface Gifs {
+export interface Gif {
     type:                       Type;
     id:                         string;
     url:                        string;

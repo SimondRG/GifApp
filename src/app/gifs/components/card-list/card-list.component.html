@@ -1,28 +1,23 @@
 
 <div class="row">
 
-    <div class="col-md-3 col-ms-6">
+    <div *ngFor="let gif of gifsHijo" class="col-md-3 col-ms-6">
+
         <div class="card mb-2 text-center bg-black">
-            <!-- TODO: Crear Imagen del gif -->
+
+            <img [src]="gif.images.downsized_medium.url" 
+                 [alt]="gif.title" 
+                 class="card-img-top"
+            >
 
             <div class="card-body text-white">
                 <p class="card-text">
-                    Hola Mundo
+                    {{ gif.title }}
                 </p>
             </div>
-        </div>
-    </div>
 
-    <div class="col-md-3 col-ms-6">
-        <div class="card mb-2 text-center bg-black">
-            <!-- TODO: Crear Imagen del gif -->
-
-            <div class="card-body text-white">
-                <p class="card-text">
-                    Hola Mundo
-                </p>
-            </div>
         </div>
+
     </div>
 
 </div>
